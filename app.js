@@ -18,7 +18,8 @@ app.use(formidable({
 
 
 app.post('/encrypto', async (req, res, next) => {
-  const text = req.fields.text;
+  const text = req.fields.texto;
+  console.log(req.fields);
   const textEncrypt = myCrypto.algoritEncrypt(text);
   res.status(200).send({
     text:textEncrypt
@@ -26,7 +27,7 @@ app.post('/encrypto', async (req, res, next) => {
 });
 
 app.post('/decrypto', async (req, res, next)=> {
-  const text = req.fields.text;
+  const text = req.fields.texto;
   console.log(text);
   const textDecrypt = myCrypto.algoritDescrypt(text);
   res.status(200).send({

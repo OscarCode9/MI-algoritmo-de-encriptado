@@ -1,0 +1,21 @@
+{
+  "name": "nodeandmongo",
+  "version": "1.0.0",
+  "description": "conectando mongo db a nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oscar Martínez",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-formidable": "^1.0.0",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
